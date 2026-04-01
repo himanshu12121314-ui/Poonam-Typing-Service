@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poonam Typing Service</title>
+
+    <style>
+        /* Body & Background Gradient */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(120deg, #e0f7fa, #f4f6f9);
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 8px;
+            opacity: 0.95;
+        }
+
+        .logo {
+            width: 140px;
+        }
+
+        /* Container - Glass Effect */
+        .container {
+            width: 80%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        /* Cards */
+        .services, .contact, .rates {
+            background: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .services:hover, .rates:hover, .contact:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(40,167,69,0.2);
+        }
+
+        h2 {
+            color: #28a745;
+            margin-bottom: 10px;
+            border-left: 5px solid #28a745;
+            padding-left: 10px;
+        }
+
+        /* Text Styling */
+        p, li {
+            color: #444;
+            font-size: 15px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Buttons */
+        button {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Floating WhatsApp & Telegram Buttons */
+        .whatsapp, .telegram {
+            position: fixed;
+            right: 20px;
+            padding: 12px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            color: white;
+            z-index: 1000;
+        }
+
+        .whatsapp {
+            bottom: 20px;
+            background: #25D366;
+        }
+
+        .whatsapp:hover {
+            background: #1ebe5d;
+        }
+
+        .telegram {
+            bottom: 70px;
+            background: #0088cc;
+        }
+
+        .telegram:hover {
+            background: #0077b5;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text {
+                text-align: center;
+            }
+
+            .logo {
+                width: 110px;
+                margin-top: 10px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="text">
+            <h1>Poonam Typing Service</h1>
+            <p>Professional Hindi & English Typing | Fast • Accurate • Affordable</p>
+        </div>
+        <img src="./logo.png" class="logo" alt="Logo">
+    </div>
+</header>
+
+<section class="container">
+
+    <div class="services">
+        <h2>🛠 My Services</h2>
+        <ul>
+            <li>Hindi Typing</li>
+            <li>English Typing</li>
+            <li>Document Formatting (Word, PDF)</li>
+            <li>Fast and Accurate Work</li>
+        </ul>
+    </div>
+
+    <div class="services">
+        <h2>⭐ Why Choose Me</h2>
+        <ul>
+            <li>✔ (99+)% Accuracy</li>
+            <li>✔ Fast Delivery</li>
+            <li>✔ Affordable Pricing</li>
+            <li>✔ Experienced Typist</li>
+        </ul>
+    </div>
+
+    <div class="services">
+        <h2>📄 Sample Work</h2>
+        <p>I can provide sample typing work on request.</p>
+    </div>
+
+    <div class="rates">
+        <h2>💰 Rates</h2>
+        <ul>
+            <li><b>English Typing</b> – ₹12 per Question & Solution</li>
+            <li><b>Hindi Typing</b> – ₹12 per Question & Solution</li>
+            <li><b>Figure</b> – ₹8 per Figure</li>
+            <li><b>For Other Typing</b> – As per Discussion</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>📞 Contact Me</h2>
+        <p>Email: himanshu12121314@gmail.com</p>
+        <p>Phone: 9671748450</p>
+        <p><b>Send your work now on WhatsApp or Telegram for quick response!</b></p>
+        <p><b>Please give us an opportunity to serve you at least once!</b></p>
+        <p><b>कृपया हमें एक बार सेवा का अवसर अवश्य दें।!</b></p>
+        <button onclick="alert('Contact me via Email or Phone!')">Contact Me</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Poonam Typing Service</p>
+</footer>
+
+<!-- WhatsApp & Telegram Buttons -->
+<a href="https://wa.me/919671748450" target="_blank" class="whatsapp">Chat on WhatsApp</a>
+<a href="https://t.me/Himanshu_355" target="_blank" class="telegram">Chat on Telegram</a>
+
+</body>
+</html>
